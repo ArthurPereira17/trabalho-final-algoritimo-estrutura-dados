@@ -1,0 +1,4 @@
+O computador processa dados em alta velocidade.
+A internet conecta pessoas do mundo inteiro.
+O tempo de resposta precisa ser pequeno.
+Algoritmos eficientes economizam tempo e memória.

@@ -1,0 +1,19 @@
+# Java
+backend/bin/
+*.class
+
+# Índice gerado em runtime
+backend/dados/
+dados/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+
+# Ferramentas locais
+.tools/
+
+# IDE / SO
+.DS_Store
+Thumbs.db
