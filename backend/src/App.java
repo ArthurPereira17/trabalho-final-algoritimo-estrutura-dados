@@ -7,10 +7,11 @@ import indice.RepositorioIndice;
  * Ponto de entrada do Buscador de Arquivos.
  *
  * Fluxo:
- *   1. Se já existe índice salvo em ./dados, carrega-o para a memória
- *      (RF09 — sem reindexar).
- *   2. (Opcional) se chamado com --indexar &lt;dir&gt;, indexa e salva antes de subir.
- *   3. Sobe o servidor HTTP na porta 8080.
+ * 1. Se já existe índice salvo em ./dados, carrega-o para a memória
+ * (RF09 — sem reindexar).
+ * 2. (Opcional) se chamado com --indexar &lt;dir&gt;, indexa e salva antes de
+ * subir.
+ * 3. Sobe o servidor HTTP na porta 8080.
  *
  * A indexação também pode ser disparada em runtime pelo endpoint
  * GET /api/indexar?dir=&lt;caminho&gt;.
@@ -21,6 +22,7 @@ public class App {
     private static final String DIR_DADOS = "dados";
 
     public static void main(String[] args) throws Exception {
+
         RepositorioIndice repositorio = new RepositorioIndice();
         IndiceInvertido indice = null;
 
